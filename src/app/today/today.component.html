@@ -3,6 +3,9 @@
     <div class="top-button">
         <button routerLink="/weather">Get weather of world !!!!</button>
       </div>
+      <div class="top-right-button">
+        <a routerLink="/home"><i class="fa fa-home"></i></a>
+    </div>
     <div class="time">{{ currentTime | date:"HH:mm - EE MMM" }}</div>
     <div class="location">{{ location.name }},{{ location.country }}</div>
   
@@ -13,7 +16,7 @@
   
     <div class="details">
       <div class="main">
-        Feels like {{ weatherNow.main.feels_like | number:'1.0-0' }}. {{ weatherNow.weather[0].main }}. {{ weatherNow.weather[0].description }}
+        Feels like {{ weatherNow.main.feels_like | number:'1.0-0' }}°C,  Weather condition:{{ weatherNow.weather[0].main }}, {{ weatherNow.weather[0].description }}
       </div>
       <div class="sub">
         Humidity: {{ weatherNow.main.humidity }}%

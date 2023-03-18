@@ -9,7 +9,8 @@
   background-size: cover;
   font-family: sans-serif;
   color: white;
-  background: linear-gradient(to bottom, #0072c6, #90d5e6, #d5edf9, #FFFFFF);
+  background: linear-gradient(to bottom, #FFC371, #FD746C, #FD746C, #3B9AB2);
+
   animation: gradientAnimation 10s ease infinite;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .btn-primary {
-  background-color: #FF9800; /* choose a contrasting color for the button */
+  background-color: #000000e3; /* choose a contrasting color for the button */
   border: none;
   border-radius: 0.5rem;
   color: white;
@@ -110,14 +111,8 @@ body {
 }
 
 /* Add a hover effect to the search button */
-.btn-primary:hover {
-  background-color: #FFB74D; /* choose a contrasting color for the hover effect */
-}
 
-/* Add a hover effect to the table rows */
-.table tr:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* add a transparent white background on hover */
-}
+
 
 /* Add a hover effect to the temperature section */
 .weather-temp:hover {
@@ -140,34 +135,13 @@ body {
 
 /* Add a hover effect to the search button */
 .btn-primary:hover {
-  background-color: #FFB74D; /* choose a contrasting color for the hover effect */
+  background-color: #f3f2f7;
+  color: black; /* choose a contrasting color for the hover effect */
 }
 
-/* Add animation to the table */
-.table {
-  opacity: 0; /* start with the table hidden */
-  transform: translateY(50px); /* move the table down 50px to start */
-  animation: fadeAndSlide 0.5s ease forwards; /* use the fadeAndSlide animation to reveal the table */
-  margin: 2rem auto;
-  border-collapse: collapse;
-  font-size: 1.2rem;
-}
 
-.table td, .table th {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-}
 
-.table th {
-  font-weight: bold;
-  background-color: #0072c6;
-  color: #fff;
-  text-align: left;
-}
 
-.table td {
-  text-align: center;
-}
 
 body {
   background: linear-gradient(to bottom, #0072c6, #90d5e6, #d5edf9, #FFFFFF);
@@ -196,4 +170,84 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+  
+  .top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .top-right-button a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .top-right-button a:hover {
+    background-color: #f2f2f2;
+  }
+
+  /* Remove borders and add some spacing */
+.table-borderless {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.table-borderless td, .table-borderless th {
+  border: none;
+  padding: 0.5rem;
+}
+
+/* Add hover effect */
+.table-borderless tbody tr:hover {
+  background-color: #F5F5F5;
+}
+
+/* Add pulsating animation */
+.table-borderless tbody tr:hover {
+  animation: beat 1s ease-in-out infinite;
+ 
+}
+table.table-borderless td {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Add some text styles */
+.table-borderless td, .table-borderless th {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+}
+
+.details-label {
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.details-value {
+  font-weight: 500;
 }

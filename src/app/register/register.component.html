@@ -39,8 +39,8 @@
             Must be same as Password.
         </mat-error> -->
         </mat-form-field>
-        <button mat-flat-button color="accent" class="create-account-btn" 
-        [disabled]="registerForm.invalid">
+        <button mat-flat-button color="primary" class="create-account-btn" 
+        [ngStyle]="{ 'opacity': registerForm.invalid ? 0.5 : 1 }">
           Create Account
         </button>
       </form>

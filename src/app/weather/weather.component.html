@@ -1,4 +1,7 @@
 <div class="weather-container">
+  <div class="top-right-button">
+    <a routerLink="/home"><i class="fa fa-home"></i></a>
+</div>
     <div class="weather-search">
       <h2 class="search-title">What's the Weather Like?</h2>
       <div class="input-group mt-3">
@@ -6,6 +9,7 @@
         <div class="input-group-append">
           <button class="input-group-text btn btn-primary" (click)="getCity(userInput.value)">Search</button>
         </div>
+       
       </div>
     </div>
   
@@ -18,7 +22,7 @@
         <div class="weather-temp">
           <img src="../../assets/images/{{weather.weather[0]?.icon}}.png" alt="">
           <h2 class="temp-title">{{weather.main.temp | number:'1.0-0'}}&#176;C</h2>
-          <p class="temp-description">{{weather.weather[0]?.description}}</p>
+          <p class="temp-description" style="text-transform: uppercase;">{{weather.weather[0]?.description}}</p>
         </div>
   
         <div class="weather-details">

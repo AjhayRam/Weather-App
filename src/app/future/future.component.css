@@ -10,6 +10,9 @@
     border: solid 2px;
     border-radius: 30px;
     border-color: orangered;
+    width: 50%;
+    position: relative;
+   left: 380px;
   }
   
   .primary ul {
@@ -51,3 +54,26 @@
     margin-bottom: 0;
   }
   
+  
+  .top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .top-right-button a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f74b06;
+    text-align: center;
+    line-height: 40px;
+    color: #eae2e2;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .top-right-button a:hover {
+    background-color: #c29013;
+  }

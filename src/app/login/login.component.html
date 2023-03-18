@@ -23,7 +23,7 @@
             <mat-error *ngIf="this.PWD.invalid">{{getPasswordErrors()}}</mat-error>
             
           </mat-form-field>
-          <button class="login-button" mat-raised-button color="primary" [disabled]="loginForm.invalid" [ngStyle]="{ 'opacity': loginForm.invalid ? 0.5 : 1 }">Login</button>
+          <button class="login-button" mat-raised-button color="primary" [ngStyle]="{ 'opacity': loginForm.invalid ? 0.5 : 1 }">Login</button>
 
         </form>
   
