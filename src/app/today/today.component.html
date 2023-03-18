@@ -1,0 +1,36 @@
+
+<div *ngIf="weatherNow" class="weather">
+    <div class="top-button">
+        <button routerLink="/weather">Get weather of world !!!!</button>
+      </div>
+    <div class="time">{{ currentTime | date:"HH:mm - EE MMM" }}</div>
+    <div class="location">{{ location.name }},{{ location.country }}</div>
+  
+    <div class="temp">
+      <span><img src="assets/images/{{weatherNow.weather[0].icon}}.png" alt=""></span>
+      <h3>{{ weatherNow.main.temp | number:'1.0-0' }} °C</h3>
+    </div>
+  
+    <div class="details">
+      <div class="main">
+        Feels like {{ weatherNow.main.feels_like | number:'1.0-0' }}. {{ weatherNow.weather[0].main }}. {{ weatherNow.weather[0].description }}
+      </div>
+      <div class="sub">
+        Humidity: {{ weatherNow.main.humidity }}%
+      </div>
+      <div class="forecast-container">
+        <h1>Forecast</h1>
+        <div class="forecast-items">
+          <div *ngFor="let item of timeline" class="forecast-item">
+            <div class="time">{{ item.time | date:'HH:mm' }}</div>
+            <div class="temp">{{ item.temp | number:'1.0-0' }} °C</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="bottom-button">
+        <button routerLink="/future">Let's see the future...</button>
+      </div>
+  </div>
+  

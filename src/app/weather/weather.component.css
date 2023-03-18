@@ -1,0 +1,199 @@
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* choose a color that evokes the feeling of weather */
+  /* background-image: url('e'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+  background: linear-gradient(to bottom, #0072c6, #90d5e6, #d5edf9, #FFFFFF);
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.search-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  width: 80%;
+}
+
+.form-control {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #FF9800; /* choose a contrasting color for the button */
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.temp-title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.weather-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+
+
+.temp-description {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.weather-details {
+  margin-bottom: 2rem;
+}
+
+.details-label {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-right: 2rem;
+}
+
+.details-value {
+  font-size: 2rem;
+}
+
+/* Set the height of the body to fill the entire viewport */
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the height of the container to fill the entire body */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+   /* choose a color that evokes the feeling of weather */
+   /* optional - use a background image or pattern that complements the color scheme */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Add a hover effect to the search button */
+.btn-primary:hover {
+  background-color: #FFB74D; /* choose a contrasting color for the hover effect */
+}
+
+/* Add a hover effect to the table rows */
+.table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* add a transparent white background on hover */
+}
+
+/* Add a hover effect to the temperature section */
+.weather-temp:hover {
+  transform: scale(1.1); /* scale up the section on hover */
+  transition: transform 0.2s ease-in-out; /* add a smooth transition effect */
+}
+
+.input-group {
+  width: 300px; /* adjust the width to suit your needs */
+  border-radius: 45px; /* add some border radius to the search bar */
+}
+
+.input-group-text {
+  border-radius: 0 45px 45px 0;
+  position: relative;
+  top: -68.5px; 
+  left: 285px;
+  height: 69.5px;/* add some border radius to the search button */
+}
+
+/* Add a hover effect to the search button */
+.btn-primary:hover {
+  background-color: #FFB74D; /* choose a contrasting color for the hover effect */
+}
+
+/* Add animation to the table */
+.table {
+  opacity: 0; /* start with the table hidden */
+  transform: translateY(50px); /* move the table down 50px to start */
+  animation: fadeAndSlide 0.5s ease forwards; /* use the fadeAndSlide animation to reveal the table */
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+.table td, .table th {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  font-weight: bold;
+  background-color: #0072c6;
+  color: #fff;
+  text-align: left;
+}
+
+.table td {
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to bottom, #0072c6, #90d5e6, #d5edf9, #FFFFFF);
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+@keyframes fadeAndSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

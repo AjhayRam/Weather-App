@@ -1,0 +1,36 @@
+<body>
+    <div class="login-container">
+      <div class="card">
+        <h1>Login</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <mat-form-field appearance="fill" class="email">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" class="form">
+            <mat-icon matPrefix>mail</mat-icon>
+
+            <mat-error *ngIf="this.Email.invalid">{{getEmailErrors()}}</mat-error>
+            
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="password">
+            <mat-label>Password</mat-label>
+            <mat-icon matPrefix>lock</mat-icon>
+            <input matInput [type]="hide ? 'password' : 'text'" id="password" formControlName="password" class="form">
+            
+            <button mat-icon-button matSuffix (click)="hide = !hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="this.PWD.invalid">{{getPasswordErrors()}}</mat-error>
+            
+          </mat-form-field>
+          <button class="login-button" mat-raised-button color="primary" [disabled]="loginForm.invalid" [ngStyle]="{ 'opacity': loginForm.invalid ? 0.5 : 1 }">Login</button>
+
+        </form>
+  
+        <div class="login-link">
+          <span>Don't have an account?</span>
+          <button mat-stroked-button color="accent" routerLink="/register">Create Account</button>
+        </div>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,40 @@
+{
+  "signupUser": [
+    {
+      "firstName": "Steve",
+      "lastName": "Justin",
+      "email": "steve@gmail.com",
+      "password": "12345678",
+      "rpassword": "12345678",
+      "id": 1
+    },
+    {
+      "firstName": "Ajhay",
+      "lastName": "Ram",
+      "email": "ajhay@gmail.com",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "firstName": "Ajhay",
+      "lastName": "Ram",
+      "email": "ram@gmail.com",
+      "password": "987654",
+      "id": 3
+    },
+    {
+      "firstName": "Steve",
+      "lastName": "Justin",
+      "email": "justin@gmail.com",
+      "password": "1234567",
+      "id": 4
+    },
+    {
+      "firstName": "Virat",
+      "lastName": "Kholi",
+      "email": "virat18@gmail.com",
+      "password": "18450717",
+      "id": 5
+    }
+  ]
+}
