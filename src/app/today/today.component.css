@@ -1,7 +1,7 @@
 .weather {
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #ff7f50, #ff4b2b, #4b79a1, #283e51);
+    background: linear-gradient(to bottom, #FFC371, #FD746C, #FD746C, #3B9AB2);
     padding: 30px;
     height: 100vh;
     display: flex;

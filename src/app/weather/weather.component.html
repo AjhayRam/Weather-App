@@ -1,4 +1,13 @@
-<div class="weather-container">
+<div class="weather-container" [ngClass]="{'clear-sky': weather?.weather[0].main === 'Clear',
+'few-clouds': weather?.weather[0].main === 'Clouds' && weather?.clouds.all < 50,
+'scattered-clouds': weather?.weather[0].main === 'Clouds' && weather?.clouds.all >= 50,
+'broken-clouds': weather?.weather[0].main === 'Clouds' && weather?.clouds.all >= 80,
+'shower-rain': weather?.weather[0].main === 'Rain' && weather?.weather[0].description.includes('shower'),
+'rain': weather?.weather[0].main === 'Rain' && !weather?.weather[0].description.includes('shower'),
+'thunderstorm': weather?.weather[0].main === 'Thunderstorm',
+'snow': weather?.weather[0].main === 'Snow',
+'mist': weather?.weather[0].main === 'Mist' || weather?.weather[0].main === 'Smoke' || weather?.weather[0].main === 'Haze' || weather?.weather[0].main === 'Dust' || weather?.weather[0].main === 'Fog' || weather?.weather[0].main === 'Sand' || weather?.weather[0].main === 'Ash' || weather?.weather[0].main === 'Squall' || weather?.weather[0].main === 'Tornado'}">
+ 
   <div class="top-right-button">
     <a routerLink="/home"><i class="fa fa-home"></i></a>
 </div>

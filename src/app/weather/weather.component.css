@@ -9,7 +9,7 @@
   background-size: cover;
   font-family: sans-serif;
   color: white;
-  background: linear-gradient(to bottom, #FFC371, #FD746C, #FD746C, #3B9AB2);
+  /* background: linear-gradient(to bottom, #FFC371, #FD746C, #FD746C, #3B9AB2); */
 
   animation: gradientAnimation 10s ease infinite;
 }
@@ -139,9 +139,34 @@ body {
   color: black; /* choose a contrasting color for the hover effect */
 }
 
+.clear-sky {
+  background-image: url('../../assets/Climate/Clearsky.jpg');
+}
+.few-clouds {
+  background-image: url('../../assets/Climate/FewClouds.jpg');
+}
+.scattered-clouds {
+  background-image: url('../../assets/Climate/ScatteredClouds.jpg');
+}
+.broken-clouds {
+  background-image: url('../../assets/Climate/Brokenclouds.jpeg');
+}
+.shower-rain {
+  background-image: url('../../assets/Climate/Showerrain.jpg');
+}
+.rain {
+  background-image: url('../../assets/Climate/Rain.jpg');
+}
+.thunderstorm {
+  background-image: url('../../assets/Climate/Thunderstorm.jpg');
+}
+.snow {
+  background-image: url('../../assets/Climate/Snow.jpg');
+}
+.mist {
+  background-image: url('../../assets/Climate/Mist.jpg');
 
-
-
+}
 
 body {
   background: linear-gradient(to bottom, #0072c6, #90d5e6, #d5edf9, #FFFFFF);
